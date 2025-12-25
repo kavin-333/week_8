@@ -1,12 +1,16 @@
 {
+  "homepage": "https://kavin-333.github.io/week_8.git",
   "name": "blog-app",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
@@ -70,6 +74,7 @@
     "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.4.23",
     "gh": "^2.8.9",
+    "gh-pages": "^6.3.0",
     "pages": "^0.0.16",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.12",
